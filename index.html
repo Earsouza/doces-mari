@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doces Mari - Doceria Artesanal</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo_doces_mari.jpg" alt="Logo Doce Encanto">
+            <div class="logo-text">
+                <h1>Doce Mari</h1>
+                <p>Doceria Artesanal</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contatos">Contatos</a>
+    </nav>
+
+    <div class="container">
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma doceria artesanal apaixonada por criar os mais deliciosos e encantadores doces. Cada receita é preparada com muito carinho e dedicação, usando ingredientes selecionados para garantir o melhor sabor.</p>
+        </section>
+
+        <section id="cardapio">
+            <h2>Nosso Cardápio</h2>
+            <div class="cardapio-carrossel">
+                <div class="cardapio-itens">
+                    <div class="cardapio-item">
+                        <img src="img/brigadeiro.jpg" alt="Cupcake de Morango">
+                        <div class="cardapio-item-info">
+                            <h3>Cupcake de Morango</h3>
+                            <p>Delicioso cupcake decorado com chantilly e morango fresco. Uma explosão de sabor e delicadeza em cada mordida.</p>
+                            <p class="preco">R$ 8,50</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <img src="img/brigadeiro.jpg" alt="Torta de Chocolate Belga">
+                        <div class="cardapio-item-info">
+                            <h3>Torta de Chocolate Belga</h3>
+                            <p>Torta cremosa feita com chocolate belga de alta qualidade. Uma experiência gastronômica irresistível para os amantes de chocolate.</p>
+                            <p class="preco">R$ 45,00</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <img src="img/logo_doces_mari.jpg" alt="Macaron Francês">
+                        <div class="cardapio-item-info">
+                            <h3>Macaron Francês</h3>
+                            <p>Delicados macarons em diferentes sabores, feitos artesanalmente. Textura leve e sabor autêntico da tradicional confeitaria francesa.</p>
+                            <p class="preco">R$ 5,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carrossel-controles">
+                <button class="carrossel-btn" id="btn-anterior">Anterior</button>
+                <button class="carrossel-btn" id="btn-proximo">Próximo</button>
+            </div>
+        </section>
+
+        <section id="depoimentos">
+            <h2>Depoimentos</h2>
+            <div class="depoimento">
+                <p>"Os doces da Doce Encanto são simplesmente maravilhosos! Cada mordida é pura felicidade."</p>
+                <p>- Maria Silva</p>
+            </div>
+            <div class="depoimento">
+                <p>"Nunca provei algo tão delicioso. Recomendo a todos!"</p>
+                <p>- João Santos</p>
+            </div>
+        </section>
+
+        <section id="contatos">
+            <h2>Contatos</h2>
+            <p>📞 (11) 99999-9999</p>
+            <p>✉️ contato@doceencanto.com.br</p>
+            <p>📍 Rua dos Doces, 123 - São Paulo, SP</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Doce Encanto - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        // Lógica do Carrossel em Loop
+        const cardapioItens = document.querySelector('.cardapio-itens');
+        const btnAnterior = document.getElementById('btn-anterior');
+        const btnProximo = document.getElementById('btn-proximo');
+        let posicaoAtual = 0;
+        const totalItens = cardapioItens.children.length;
+
+        btnProximo.addEventListener('click', () => {
+            posicaoAtual = (posicaoAtual + 1) % totalItens;
+            cardapioItens.style.transform = `translateX(-${posicaoAtual * 100}%)`;
+        });
+
+        btnAnterior.addEventListener('click', () => {
+            posicaoAtual = (posicaoAtual - 1 + totalItens) % totalItens;
+            cardapioItens.style.transform = `translateX(-${posicaoAtual * 100}%)`;
+        });
+
+        // Navegação entre seções
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
