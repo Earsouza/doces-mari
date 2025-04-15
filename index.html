@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doces Mari - Doceria Artesanal</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -20,6 +21,8 @@
     <nav>
         <a href="#sobre">Sobre</a>
         <a href="#cardapio">Cardápio</a>
+        <a href="#redes-sociais">Redes Sociais</a>
+        <a href="#doces">Fotos</a>
         <a href="#depoimentos">Depoimentos</a>
         <a href="#contatos">Contatos</a>
     </nav>
@@ -31,31 +34,57 @@
         </section>
 
         <section id="cardapio">
-            <h2>Nosso Cardápio</h2>
-            <div class="cardapio-carrossel">
-                <div class="cardapio-itens">
-                    <div class="cardapio-item">
-                        <img src="img/brigadeiro.jpg" alt="Cupcake de Morango">
-                        <div class="cardapio-item-info">
-                            <h3>Cupcake de Morango</h3>
-                            <p>Delicioso cupcake decorado com chantilly e morango fresco. Uma explosão de sabor e delicadeza em cada mordida.</p>
-                            <p class="preco">R$ 8,50</p>
+            <h2>Cardápios</h2>
+            <p>Escolha um dos nossos cardápios especiais e faça o download em PDF:</p>
+            
+            <div class="cardapios-container">
+                <div class="cardapio-box">
+                    <h3>Doces Mari 2025</h3>
+                    <p>Deliciosos bolos e tortas artesanais para todas as ocasiões especiais.</p>
+                    <a href="cardapios/Cardápio 2025.pdf" download class="btn-download">Baixar PDF</a>
+                </div>
+
+                <div class="cardapio-box">
+                    <h3>Páscoa 2025</h3>
+                    <p>Brigadeiros, beijinhos, cajuzinhos e muito mais para adoçar o seu dia!</p>
+                    <a href="cardapios/Doces Mari - Páscoa 2025.pdf" download class="btn-download">Baixar PDF</a>
+                </div>
+            
+                
+                <div class="cardapio-box">
+                    <h3>Natal 2025</h3>
+                    <p>Doces sofisticados para festas e eventos, com acabamento impecável.</p>
+                    <a download class="btn-download">Em Breve</a>
+
+                    
+                </div>
+            </div>
+        </section>
+        <section id="doces">
+            <h2>Fotos</h2>
+            <div class="doces-carrossel">
+                <div class="doces-itens">
+                    <div class="doces-item">
+                        <img src="img/bolos.png" alt="Bolos">
+                        <div class="doces-item-info">
+                            <h3>Bolos Personalizados</h3>
+                            <p>Você escolhe o sabor, o recheio, o tema e os detalhes, nós damos vida ao seu sonho em forma de doce!
+                                Feitos com ingredientes frescos e muito amor, nossos bolos são tão lindos quanto deliciosos.</p>
                         </div>
                     </div>
-                    <div class="cardapio-item">
-                        <img src="img/brigadeiro.jpg" alt="Torta de Chocolate Belga">
-                        <div class="cardapio-item-info">
-                            <h3>Torta de Chocolate Belga</h3>
-                            <p>Torta cremosa feita com chocolate belga de alta qualidade. Uma experiência gastronômica irresistível para os amantes de chocolate.</p>
-                            <p class="preco">R$ 45,00</p>
+                    <div class="doces-item">
+                        <img src="img/docinhos.png" alt="Docinhosa">
+                        <div class="doces-item-info">
+                            <h3>Docinhos</h3>
+                            <p>Os docinhos da Doces Mari são pequenos pedaços de felicidade!
+                                Perfeitos para festas, eventos ou aquele momento de puro prazer no dia a dia, temos brigadeiros, beijinhos, cajuzinhos e muito mais!</p>
                         </div>
                     </div>
-                    <div class="cardapio-item">
-                        <img src="img/logo_doces_mari.jpg" alt="Macaron Francês">
-                        <div class="cardapio-item-info">
-                            <h3>Macaron Francês</h3>
-                            <p>Delicados macarons em diferentes sabores, feitos artesanalmente. Textura leve e sabor autêntico da tradicional confeitaria francesa.</p>
-                            <p class="preco">R$ 5,00</p>
+                    <div class="doces-item">
+                        <img src="img/logo_doces_mari.jpg" alt="Salgados">
+                        <div class="doces-item-info">
+                            <h3>Salgados</h3>
+                            <p> Complemente seu evento com salgados irresistíveis da Doces Mari – porque o equilíbrio perfeito entre doce e salgado existe!</p>
                         </div>
                     </div>
                 </div>
@@ -64,59 +93,61 @@
                 <button class="carrossel-btn" id="btn-anterior">Anterior</button>
                 <button class="carrossel-btn" id="btn-proximo">Próximo</button>
             </div>
+
+        <div class="consulta-valores">
+            <p>Para informações adicionais e valores, entrar em contato.</p>
+        </div>
+        </section>
+
+                
+        <!-- Nova seção de Redes Sociais -->
+        <section id="redes-sociais">
+            <h2>Nossas Redes Sociais</h2>
+            <p>Siga a Doces Mari nas redes sociais e fique por dentro das novidades, promoções e delícias que preparamos todos os dias!</p>
+            
+            <div class="social-media-container">
+                <a href="https://www.instagram.com/docesmarii/" class="social-media-item" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <span>@docesmari</span>
+                </a>
+                
+                <a href="https://www.facebook.com/p/Doces-Mari-100066402562296/" class="social-media-item" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                    <span>Doces Mari Oficial</span>
+                </a>
+                
+                <a href="https://wa.me/5547988494956" class="social-media-item" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+        
+                </a>
+            </div>
         </section>
 
         <section id="depoimentos">
             <h2>Depoimentos</h2>
             <div class="depoimento">
-                <p>"Os doces da Doce Encanto são simplesmente maravilhosos! Cada mordida é pura felicidade."</p>
-                <p>- Maria Silva</p>
+                <p>"Os doces da Mari são simplesmente maravilhosos! Cada mordida é pura felicidade."</p>
+                <p>- Maria Luiza - Cliente a 7 anos</p>
             </div>
             <div class="depoimento">
                 <p>"Nunca provei algo tão delicioso. Recomendo a todos!"</p>
-                <p>- João Santos</p>
+                <p>- Eduardo Antônio - Cliente a 2 anos</p>
             </div>
         </section>
 
         <section id="contatos">
             <h2>Contatos</h2>
-            <p>📞 (11) 99999-9999</p>
-            <p>✉️ contato@doceencanto.com.br</p>
-            <p>📍 Rua dos Doces, 123 - São Paulo, SP</p>
+            <p>📞 (47) 98849-4956</p>
+            <p>📍 Rua Prefeito Leopoldo Schramm, 591 -Blumenau, SC</p>
         </section>
     </div>
 
     <footer>
-        <p>© 2024 Doce Encanto - Todos os direitos reservados</p>
+        <p>© 2024 Doces Mari - Todos os direitos reservados</p>
     </footer>
 
-    <script>
-        // Lógica do Carrossel em Loop
-        const cardapioItens = document.querySelector('.cardapio-itens');
-        const btnAnterior = document.getElementById('btn-anterior');
-        const btnProximo = document.getElementById('btn-proximo');
-        let posicaoAtual = 0;
-        const totalItens = cardapioItens.children.length;
-
-        btnProximo.addEventListener('click', () => {
-            posicaoAtual = (posicaoAtual + 1) % totalItens;
-            cardapioItens.style.transform = `translateX(-${posicaoAtual * 100}%)`;
-        });
-
-        btnAnterior.addEventListener('click', () => {
-            posicaoAtual = (posicaoAtual - 1 + totalItens) % totalItens;
-            cardapioItens.style.transform = `translateX(-${posicaoAtual * 100}%)`;
-        });
-
-        // Navegação entre seções
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="styles/script.js"></script>
 </body>
 </html>
