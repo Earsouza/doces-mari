@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff8f8">
+    <title>Doces Mari | Doceria Artesanal em Gaspar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/editorial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Doces Mari, início">
+            <img src="img/logo_doces_mari.jpg" alt="Logo Doces Mari">
+            <span class="brand-copy"><strong>Doces Mari</strong><small>Doceria artesanal</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+            <span></span><span></span>
+        </button>
+        <nav class="main-nav" id="menu-principal" aria-label="Navegação principal">
+            <a href="#sobre">Sobre</a><a href="#doces">Fotos</a><a href="#cardapio">Cardápios</a>
+            <a href="#redes-sociais">Redes sociais</a><a href="#contatos">Contatos</a>
+        </nav>
+        <a class="header-contact" href="https://wa.me/5547988494956" target="_blank" rel="noopener noreferrer">
+            <span>Fale com a Mari</span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        </a>
+    </header>
+
+    <main id="inicio">
+        <section class="hero" id="sobre" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <p class="eyebrow"><span></span> Doceria artesanal <b>·</b> Gaspar, SC</p>
+                <h1 id="hero-title">Um toque de carinho em <em>cada doce.</em></h1>
+                <p class="hero-description">Somos uma doceria artesanal apaixonada por criar os mais deliciosos e encantadores doces. Cada receita é preparada com muito carinho e dedicação, usando ingredientes selecionados para garantir o melhor sabor.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#doces">Conheça nossas delícias <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+                    <a class="text-link" href="#cardapio">Ver cardápios <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="hero-signature"><span class="signature-line"></span><span>Bolos <b>·</b> Docinhos <b>·</b> Salgados</span></div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-photo-wrap"><img class="hero-photo" src="img/bolos.png" alt="Bolo artesanal decorado com flores em pasta"></div>
+                <div class="photo-stamp" aria-hidden="true"><span>Feito</span><strong>com<br>amor</strong><i class="fa-solid fa-heart"></i></div>
+                <p class="photo-caption"><span>01</span> Feito para celebrar</p>
+            </div>
+            <a class="scroll-cue" href="#doces" aria-label="Role para ver as delícias"><span></span></a>
+        </section>
+
+        <section class="collection section-shell" id="doces" aria-labelledby="collection-title">
+            <div class="section-heading">
+                <div><p class="eyebrow"><span></span> Feitos para compartilhar</p><h2 id="collection-title">Delícias que <em>encantam.</em></h2></div>
+                <p class="section-intro">Cada detalhe é pensado para deixar sua comemoração ainda mais especial.</p>
+            </div>
+            <div class="gallery-stage">
+                <div class="gallery-index"><span id="carousel-status" aria-live="polite">01</span><i></i>03</div>
+                <div class="doces-carrossel" aria-roledescription="carrossel" aria-label="Fotos de produtos">
+                    <div class="doces-itens">
+                        <article class="doces-item" aria-label="Bolos Personalizados">
+                            <img src="img/bolos.png" alt="Bolo personalizado decorado com flores">
+                            <div class="doces-item-info"><span class="slide-kicker">01 / Bolos</span><h3>Bolos Personalizados</h3><p>Você escolhe o sabor, o recheio, o tema e os detalhes, nós damos vida ao seu sonho em forma de doce! Feitos com ingredientes frescos e muito amor, nossos bolos são tão lindos quanto deliciosos.</p></div>
+                        </article>
+                        <article class="doces-item" aria-label="Docinhos">
+                            <img src="img/docinhos.png" alt="Variedade de docinhos artesanais">
+                            <div class="doces-item-info"><span class="slide-kicker">02 / Docinhos</span><h3>Docinhos</h3><p>Os docinhos da Doces Mari são pequenos pedaços de felicidade! Perfeitos para festas, eventos ou aquele momento de puro prazer no dia a dia, temos brigadeiros, beijinhos, cajuzinhos e muito mais!</p></div>
+                        </article>
+                        <article class="doces-item" aria-label="Salgados">
+                            <img src="img/logo_doces_mari.jpg" alt="Identidade visual da Doces Mari">
+                            <div class="doces-item-info"><span class="slide-kicker">03 / Salgados</span><h3>Salgados</h3><p>Complemente seu evento com salgados irresistíveis da Doces Mari – porque o equilíbrio perfeito entre doce e salgado existe!</p></div>
+                        </article>
+                    </div>
+                </div>
+                <div class="gallery-controls"><p>Para informações adicionais e valores, entrar em contato.</p>
+                    <div class="control-buttons">
+                        <button class="carrossel-btn" id="btn-anterior" type="button" aria-label="Foto anterior"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+                        <button class="carrossel-btn" id="btn-proximo" type="button" aria-label="Próxima foto"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section" id="cardapio" aria-labelledby="menu-title">
+            <div class="section-shell menu-inner">
+                <div class="section-heading"><div><p class="eyebrow"><span></span> Escolha seu favorito</p><h2 id="menu-title">Cardápios <em>especiais.</em></h2></div><p class="section-intro">Escolha um dos nossos cardápios especiais e faça o download em PDF:</p></div>
+                <div class="cardapios-container">
+                    <article class="cardapio-box menu-featured"><span class="menu-number">01</span><p class="menu-label">Para todas as ocasiões</p><h3>Doces Mari</h3><p class="menu-description">Deliciosos bolos e tortas artesanais para todas as ocasiões especiais.</p><a href="cardapios/Cardápio 2025.pdf" download="Cardápio Doces Mari.pdf" class="btn-download">Baixar PDF <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a></article>
+                    <article class="cardapio-box menu-easter"><span class="menu-number">02</span><p class="menu-label">Uma época mais doce</p><h3>Páscoa</h3><p class="menu-description">Brigadeiros, beijinhos, cajuzinhos e muito mais para adoçar o seu dia!</p><a href="cardapios/Doces Mari - Páscoa 2025.pdf" download="Cardápio de Páscoa.pdf" class="btn-download">Baixar PDF <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a></article>
+                    <article class="cardapio-box menu-coming"><span class="menu-number">03</span><p class="menu-label">Edição especial</p><h3>Natal</h3><p class="menu-description">Doces sofisticados para festas e eventos, com acabamento impecável.</p><a href="cardapios/Cardápio de Natal.pdf" download="Cardápio de Natal.pdf" class="btn-download">Baixar PDF <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-section" id="redes-sociais" aria-labelledby="social-title">
+            <div class="section-shell social-inner">
+                <div class="social-copy"><p class="eyebrow"><span></span> Um pouco mais de perto</p><h2 id="social-title">Acompanhe as <em>novidades.</em></h2><p>Siga a Doces Mari nas redes sociais e fique por dentro das novidades, promoções e delícias que preparamos todos os dias!</p></div>
+                <div class="social-media-container">
+                    <a href="https://www.instagram.com/docesmarii/" class="social-media-item" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i><span>@docesmari</span><i class="fa-solid fa-arrow-up-right-from-square social-arrow" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/p/Doces-Mari-100066402562296/" class="social-media-item" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i><span>Doces Mari Oficial</span><i class="fa-solid fa-arrow-up-right-from-square social-arrow" aria-hidden="true"></i></a>
+                    <a href="https://wa.me/5547988494956" class="social-media-item" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>WhatsApp</span><i class="fa-solid fa-arrow-up-right-from-square social-arrow" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contatos" aria-labelledby="contact-title">
+            <div class="section-shell contact-inner">
+                <div><p class="eyebrow"><span></span> Vamos adoçar seu dia?</p><h2 id="contact-title">Seu próximo momento especial começa <em>aqui.</em></h2></div>
+                <div class="contact-details">
+                    <a href="tel:+5547988494956"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>(47) 98849-4956</span></a>
+                    <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Rua Prefeito Leopoldo Schramm, 591<br>Gaspar, SC</span></p>
+                    <a class="button button-light" href="https://wa.me/5547988494956" target="_blank" rel="noopener noreferrer">Fale com a Doces Mari <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a class="whatsapp-flutuante" href="https://wa.me/5547988494956" target="_blank" rel="noopener noreferrer" aria-label="Fale com a Doces Mari pelo WhatsApp" title="Fale pelo WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+    <footer class="site-footer"><a class="footer-brand" href="#inicio">Doces Mari <span>· Doceria Artesanal</span></a><p>© Doces Mari - Todos os direitos reservados</p><a class="back-to-top" href="#inicio" aria-label="Voltar ao início"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a></footer>
+
+    <script src="styles/script.js"></script>
+</body>
+</html>
